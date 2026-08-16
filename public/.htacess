@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Preskače ako je direktorijum
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Preskače ako je fajl
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Sve ostalo ide na index.php
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

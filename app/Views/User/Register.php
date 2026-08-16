@@ -1,0 +1,13 @@
+<div>
+ <h1>Register</h1>
+ <form method="POST">
+   <label for="username">Username:</label>
+   <input type="text" name="username" id="username">
+   <label for="email">Email:</label>
+   <input type="email" name="email" id="email">
+   <label for="password">Password:</label>
+   <input type="password" name="password" id="password">
+   <button type="submit">Register</button>
+ </form>
+ <a href="<?= BASE_URL ?>user/login">Login</a>
+</div>
